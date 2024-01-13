@@ -1,0 +1,666 @@
+---
+import { Image } from "astro:assets";
+import NavDropdownImg from "../../public/images/down-arrow.png";
+import loginIcon from "../../public/images/login.png";
+import logo from "../../public/images/Company-logo.png";
+import NavMenuIcon from "../../public/images/open.svg";
+import RightArrow from "../../public/images/next.png";
+import website_development from "../../public/images/Services-icons/website_development.png";
+import website_platforms from "../../public/images/Services-icons/website_platforms.png";
+import software_development from "../../public/images/Services-icons/software_development.png";
+import software_developer from "../../public/images/Services-icons/software_developer.png";
+import mobile from "../../public/images/Services-icons/mobile.png";
+import software_modification from "../../public/images/Services-icons/software_modification.png";
+import maintenance from "../../public/images/Services-icons/maintenance.png";
+---
+
+<style>
+  .nav-text:hover + img {
+    transform: scaleY(-1);
+    transition: transform 0.3s ease;
+  }
+</style>
+<section class="sticky top-0 z-10">
+  <div
+    class="h-[56px] w-full sticky top-0 z-[55] mx-auto primary-bg px-[2px] flex justify-center items-center 1330px:px-[9px]"
+  >
+    <p
+      class="md:text-[16px] text-[14px] text-center justify-center w-full text-white primary-font md:flex mx-auto gap-2"
+      style="word-spacing: 3px;"
+    >
+      Take your business online today with Datadoat Labs
+      <a
+        class="flex items-center text-center justify-center"
+        href="/services/website_platforms"
+        ><u>Shopify Service</u><Image src={RightArrow} alt="" class="w-5 h-5" />
+      </a>
+    </p>
+  </div>
+
+  <header
+    class="flex justify-between items-center content-center p-4 md:px-10 bg-slate-50"
+  >
+    <a href="/">
+      <Image src={logo} class="w-48" alt="Datadoat Labs" />
+    </a>
+    <nav>
+      <ul class="hidden min-[1050px]:flex items-center nav-links">
+        <li class="m-3 group nav-link">
+          <span
+            class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
+          >
+            <p class="nav-text">Services</p>
+            <img
+              src="../../public/images/down-arrow.png"
+              alt="down-arrow"
+              class="w-8 h-8 group-hover:rotate-0"
+            />
+          </span>
+          <section
+            class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu"
+          >
+            <div class="p-4 flex-1 flex-grow-[2]">
+              <div class="grid grid-cols-4 gap-0">
+                <a
+                  href="/services/website_development"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 border-transparent hover:bg-[#F2F2F2] duration-500 border-2 rounded-xl"
+                >
+                  <Image
+                    src={website_development}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Website Development<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Business Website, E-Commerce Development, Landing pages
+                      </p>
+                    </div>
+                  </section>
+                </a>
+                <a
+                  href="/services/website_platforms"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 border-transparent hover:bg-[#F2F2F2] duration-500 border-2 rounded-xl"
+                >
+                  <Image
+                    src={website_platforms}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Website Platforms<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Shopify
+                      </p>
+                      <span class="coming-span">New Service</span>
+                    </div>
+                  </section>
+                </a>
+                <a
+                  href="/services/software_development"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 border-transparent hover:bg-[#F2F2F2] duration-500 border-2 rounded-xl"
+                >
+                  <Image
+                    src={software_development}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Software Development<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Web Application, Desktop Application
+                      </p>
+                    </div>
+                  </section>
+                </a>
+                <a
+                  href="/services/software_developer"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 px-4 hover:bg-[#F2F2F2] duration-500 rounded-xl"
+                >
+                  <Image
+                    src={software_developer}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-[20px] font-semibold leading-9 tracking-[-0.5px] text-black"
+                      >
+                        Software Developers
+                        <i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Python, Java, JavaScript, PHP, Laravel Developers and
+                        more
+                      </p>
+                    </div>
+                  </section>
+                </a>
+                <a
+                  href="/services/mobile_app_development"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 border-transparent hover:bg-[#F2F2F2] duration-500 border-2 rounded-xl"
+                >
+                  <Image src={mobile} alt="web-browser.png" class="w-8 h-8" />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Mobile app Development<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Cross-Platform, IOS Mobile App, Android Mobile App
+                      </p>
+                    </div>
+                  </section>
+                </a>
+                <a
+                  href="/services/software_modification"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 border-transparent hover:bg-[#F2F2F2] duration-500 border-2 rounded-xl"
+                >
+                  <Image
+                    src={software_modification}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black"
+                      >
+                        Software Modification
+                        <i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        APIs and Integration, Adding Tools, Themes, Plugins and
+                        more
+                      </p>
+                    </div>
+                  </section>
+                </a>
+                <a
+                  href="/services/software_maintenance"
+                  target=""
+                  class="flex items-start justify-start m-4 p-2 border-transparent hover:bg-[#F2F2F2] duration-500 border-2 rounded-xl"
+                >
+                  <Image
+                    src={maintenance}
+                    alt="web-browser.png"
+                    class="w-8 h-8"
+                  />
+                  <section class="ml-[15px] cursor-pointer">
+                    <div>
+                      <h2
+                        class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                      >
+                        Software Maintenance<i
+                          class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary"
+                        ></i>
+                      </h2>
+                      <p
+                        class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80"
+                      >
+                        Ensuring smooth operation with expert software
+                        maintenance services
+                      </p>
+                    </div>
+                  </section>
+                </a>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <li class="m-3 group">
+          <span
+            class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
+          >
+            <a href="/projects/view-projects">Case Studies</a>
+            <!-- <Image src={NavDropdownImg} alt="" class="w-8 h-8" /> -->
+          </span>
+          <!-- <section
+          class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
+        >
+          <div class="pr-10 p-4 pt-0">
+            <ul>
+              <li>
+                <a href="/projects/view-projects">
+                  <p>View Projects</p>
+                </a>
+              </li>
+              <li>
+                <a href="/projects/collaborations">
+                  <p>Collaborations</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="/projects/our-products">
+                  <div class="flex items-center gap-2">
+                    <p>Our Products</p>
+                    <span class="coming-span"> Coming Soon</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+        </li>
+
+        <li class="m-3">
+          <span>
+            <a
+              href="/why-datadoat-labs"
+              class="text-lg font-semibold cursor-pointer transition-colors duration-200"
+            >
+              Why Datadoat Labs?
+            </a>
+          </span>
+        </li>
+
+        <li class="m-3 group">
+          <span
+            class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
+          >
+            <p class="nav-text">Resources</p>
+            <img
+              src="../../public/images/down-arrow.png"
+              alt="down-arrow"
+              class="w-8 h-8"
+            />
+          </span>
+          <section
+            class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t border-gray-300 nav-menu-2"
+          >
+            <div class="pr-6 p-4 pt-0">
+              <ul class="">
+                <li>
+                  <a href="/resources/blog">
+                    <p>Company Blog</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/careers">
+                    <p>Careers</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/about">
+                    <p>About</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/press-releases">
+                    <p>Press</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </li>
+
+        <li class="m-3">
+          <span>
+            <a
+              class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center gap-1 primary-color"
+              href="/contact-sales"
+              target=""
+            >
+              <Image src={loginIcon} alt="" class="w-6 h-5" />
+              <p>Contact Sales</p>
+            </a>
+          </span>
+        </li>
+      </ul>
+
+      <div class="hidden max-[1049px]:flex" id="mobile-menu">
+        <Image
+          alt="close"
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+          class="mr-[5px] cursor-pointer"
+          style="color: transparent"
+          src={NavMenuIcon}
+          width="24"
+          height="24"
+        />
+      </div>
+
+      <section
+        class="hidden bg-white py-[28px] w-[100%] p-7 nav-menu z-[100] mt-[2.6%]"
+        style="transform: rotateX(0deg)"
+      >
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <p class="text-xl font-semibold leading-9 text-accent ml-2">
+              Services
+            </p>
+            <Image src={NavDropdownImg} alt="" class="w-8 h-8" />
+          </div>
+
+          <div class="flex-1 flex-grow-[2]">
+            <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2">
+              <a
+                href="/services/website_development"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={website_development}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Website Development<i
+                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Business Website, E-Commerce Development, Landing pages
+                    </p>
+                  </div>
+                </section>
+              </a>
+              <a
+                href="/services/website_platforms"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={website_platforms}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Website Platforms<i
+                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Shopify
+                    </p>
+                    <span class="coming-span">New Service</span>
+                  </div>
+                </section>
+              </a>
+              <a
+                href="/services/software_development"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={software_development}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Software Development<i
+                        class="fa-solid fa-angle-right ml-[6px] inline p-[1px] text-secondary opacity-80"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Web Application, Desktop Application
+                    </p>
+                  </div>
+                </section>
+              </a>
+              <a
+                href="/services/software_developer"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={software_developer}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Software Developers<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Python, Java, JavaScript, PHP, Laravel Developers and more
+                    </p>
+                  </div>
+                </section>
+              </a>
+              <a
+                href="/services/mobile_app_development"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image src={mobile} alt="web-browser.png" class="w-8 h-8" />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Mobile app Development<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Cross-Platform, IOS Mobile App, Android Mobile App
+                    </p>
+                  </div>
+                </section>
+              </a>
+              <a
+                href="/services/software_modification"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={software_modification}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Software Modification<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      APIs and Integration, Adding Tools, Themes, Plugins and
+                      more
+                    </p>
+                  </div>
+                </section>
+              </a>
+              <a
+                href="/services/software_maintenance"
+                target=""
+                class="flex items-start m-4 p-2 border-transparent hover:border-accent border-2 rounded-xl"
+              >
+                <Image
+                  src={maintenance}
+                  alt="web-browser.png"
+                  class="w-8 h-8"
+                />
+                <section class="ml-[15px] cursor-pointer">
+                  <div>
+                    <h2
+                      class="whitespace-nowrap text-xl font-semibold leading-9 tracking-[-0.5px] text-black 1090px:text-2xl"
+                    >
+                      Software Maintenance<i
+                        class="fa-solid fa-angle-right ml-[3px] inline p-[1px] text-secondary"
+                      ></i>
+                    </h2>
+                    <p
+                      class="mt-[6px] text-base font-normal leading-6 tracking-[-0.5px] text-secondary opacity-80 1230px:w-[260px] 1400px:w-[300px] 1500px:w-[341px]"
+                    >
+                      Ensuring smooth operation with expert software maintenance
+                      services
+                    </p>
+                  </div>
+                </section>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <p class="text-xl font-semibold leading-9 text-accent ml-2">
+              <a href="/projects/view-projects">Projects</a>
+            </p>
+            <!-- <Image src={NavDropdownImg} alt="" class="w-8 h-8" /> -->
+          </div>
+          <!-- <div>
+          <div class="p-4 flex-1 flex-grow-[2]">
+            <div class="-mt-8 ml-4">
+              <ul class="flex flex-col gap-1">
+                <li>
+                  <a href="/projects/view-projects"> View all projects</a>
+                </li>
+                <li>
+                  <a href="/projects/collaborations"> Collaborations</a>
+                </li>
+                <li>
+                  <a href="/projects/our-products">
+                    Our Products <span class="coming-span"> Coming Soon</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        </div>
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <a href="/why-datadoat-labs">
+              <p class="text-xl font-semibold leading-9 text-accent ml-2">
+                Why Datadoat Labs?
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="border-b-2">
+          <div class="flex justify-between p-4 faq-itm">
+            <p
+              class="nav-text text-xl font-semibold leading-9 text-accent ml-2"
+            >
+              Resources
+            </p>
+            <img
+              src="../../public/images/down-arrow.png"
+              alt="down-arrow"
+              class="w-8 h-8"
+            />
+          </div>
+
+          <div>
+            <div class="p-4 flex-1 flex-grow-[2]">
+              <div class="-mt-8 ml-4">
+                <ul class="flex flex-col gap-1">
+                  <li>
+                    <a href="/resources/blog"> Company Blog</a>
+                  </li>
+                  <li>
+                    <a href="/resources/careers"> Careers</a>
+                  </li>
+                  <li>
+                    <a href="/resources/about"> About</a>
+                  </li>
+                  <li>
+                    <a href="/resources/press-releases"> Press</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-between p-4 border-b-2">
+          <p
+            class="text-xl font-semibold leading-9 text-accent ml-2 primary-color flex items-center gap-2"
+          >
+            <Image src={loginIcon} alt="" class="w-6 h-5" />
+            <a href="/contact-sales" target=""> Contact Sales</a>
+          </p>
+        </div>
+      </section>
+    </nav>
+  </header>
+</section>

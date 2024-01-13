@@ -1,0 +1,23 @@
+---
+import MainHead from "./MainHead.astro";
+import "../styles/global.css";
+
+const {
+  title = "Datadot Labs",
+  description = "My musings about the Astro framework",
+} = Astro.props;
+
+import Navbar from "../shared/Navbar.astro";
+import Footer from "../shared/Footer.astro";
+---
+
+<html lang="en">
+  <MainHead {title} {description} />
+  <body class="bg-slate-50">
+    <Navbar />
+    <main>
+      <slot> Default Text</slot>
+    </main>
+    <Footer />
+  </body>
+</html>
