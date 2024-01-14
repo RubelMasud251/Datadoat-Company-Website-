@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import NavDropdownImg from "../../public/images/down-arrow.png";
-import loginIcon from "../../public/images/login.png";
+import loginIcon from "../../public/images/contacticon.png";
 import logo from "../../public/images/Company-logo.png";
 import NavMenuIcon from "../../public/images/open.svg";
 import RightArrow from "../../public/images/next.png";
@@ -15,14 +15,15 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
 ---
 
 <style>
-  .nav-text:hover + img {
+  .nav-link:hover .arrow-img {
     transform: scaleY(-1);
     transition: transform 0.3s ease;
+    color: blue;
   }
 </style>
-<section class="sticky top-0 z-10">
+<section class="sticky top-0 z-10 border-b">
   <div
-    class="h-[56px] w-full sticky top-0 z-[55] mx-auto primary-bg px-[2px] flex justify-center items-center 1330px:px-[9px]"
+    class="h-[55px] w-full sticky top-0 z-[55] mx-auto primary-bg px-[2px] flex justify-center items-center 1330px:px-[9px]"
   >
     <p
       class="md:text-[16px] text-[14px] text-center justify-center w-full text-white primary-font md:flex mx-auto gap-2"
@@ -38,7 +39,7 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
   </div>
 
   <header
-    class="flex justify-between items-center content-center p-4 md:px-10 bg-slate-50"
+    class="flex justify-between items-center content-center px-4 py-[6px] md:px-10 bg-slate-50"
   >
     <a href="/">
       <Image src={logo} class="w-48" alt="Datadoat Labs" />
@@ -49,11 +50,12 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
           <span
             class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
           >
-            <p class="nav-text">Services</p>
+            <p>Services</p>
+
             <Image
               src={NavDropdownImg}
               alt="down-arrow"
-              class="w-8 h-8 group-hover:rotate-0"
+              class="w-8 h-8 arrow-img"
             />
           </span>
           <section
@@ -262,35 +264,7 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
             class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
           >
             <a href="/projects/view-projects">Case Studies</a>
-            <!-- <Image src={NavDropdownImg} alt="" class="w-8 h-8" /> -->
           </span>
-          <!-- <section
-          class="group-hover:rotate-0 z-50 bg-white shadow-xl flex mt-4 m-12 mr-0 ml-0 border-t-[1px] border-b-[1px] border-gray-300 nav-menu-2"
-        >
-          <div class="pr-10 p-4 pt-0">
-            <ul>
-              <li>
-                <a href="/projects/view-projects">
-                  <p>View Projects</p>
-                </a>
-              </li>
-              <li>
-                <a href="/projects/collaborations">
-                  <p>Collaborations</p>
-                </a>
-              </li>
-
-              <li>
-                <a href="/projects/our-products">
-                  <div class="flex items-center gap-2">
-                    <p>Our Products</p>
-                    <span class="coming-span"> Coming Soon</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section> -->
         </li>
 
         <li class="m-3">
@@ -304,7 +278,7 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
           </span>
         </li>
 
-        <li class="m-3 group">
+        <li class="m-3 group nav-link">
           <span
             class="text-lg font-semibold cursor-pointer transition-colors duration-200 flex items-center"
           >
@@ -312,7 +286,7 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
             <Image
               src={NavDropdownImg}
               alt="down-arrow"
-              class="w-8 h-8 group-hover:rotate-0"
+              class="w-8 h-8 arrow-img"
             />
           </span>
           <section
@@ -352,7 +326,7 @@ import maintenance from "../../public/images/Services-icons/maintenance.png";
               href="/contact-sales"
               target=""
             >
-              <Image src={loginIcon} alt="" class="w-6 h-5" />
+              <Image src={loginIcon} alt="" class="w-6 h-6" />
               <p>Contact Sales</p>
             </a>
           </span>
